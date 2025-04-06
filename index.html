@@ -3,41 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dan's Bakery - Home</title>
+  <title>Dan's Bakery | Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="images/logo.jpg" alt="Dan's Bakery Logo">
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><img src="logo.jpg" alt="Dan's Bakery Logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="promotions.html">Promotions</a></li>
-      <li><a href="delivery.html">Delivery</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <h1>Welcome to Dan's Bakery</h1>
+      <p>Delicious treats baked fresh every day.</p>
+      <a href="products.html" class="btn">Explore Our Products</a>
+    </div>
   </header>
 
-  <section class="intro">
-    <h1>Welcome to Dan's Bakery</h1>
-    <p>At Dan's Bakery, we bring you freshly baked pastries, breads, and cakes made with love and tradition.</p>
-    <a href="products.html" class="btn">Explore Our Products</a>
+  <section class="intro-section">
+    <div class="container">
+      <h2>Our Passion</h2>
+      <p>
+        At Dan's Bakery, we are passionate about creating baked goods that warm the heart
+        and delight the taste buds. From our famous sourdough breads to our decadent
+        chocolate cakes, each item is crafted with love, care, and the finest ingredients.
+      </p>
+    </div>
   </section>
 
-  <section class="content">
-    <h2>Our Passion</h2>
-    <p>We use only the finest ingredients to ensure each bite is a taste of excellence. From croissants to custom cakes, we bake happiness into everything we make.</p>
+  <section class="highlight-products">
+    <div class="container">
+      <h2>Popular Treats</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1">
+          <h3>Classic Croissant</h3>
+          <p>Flaky, buttery, and golden-brown perfection.</p>
+        </div>
+        <div class="product-card">
+          <img src="product2.jpg" alt="Product 2">
+          <h3>Chocolate Cupcake</h3>
+          <p>Rich chocolate cake topped with creamy frosting.</p>
+        </div>
+        <div class="product-card">
+          <img src="product3.jpg" alt="Product 3">
+          <h3>Fresh Baguette</h3>
+          <p>Crusty on the outside, soft and airy on the inside.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Order Now</h2>
+      <p>Place your order online and enjoy fresh baked goods delivered to your door.</p>
+      <a href="delivery.html" class="btn">Order Now</a>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
+
 
