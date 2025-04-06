@@ -186,3 +186,8 @@ blockquote {
         flex-direction: column;
     }
 }
+.logo {
+  height: 60px;
+  width: auto;
+  vertical-align: middle;
+}
