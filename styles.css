@@ -262,4 +262,105 @@ input, textarea, select {
     gap: 0.5rem;
   }
 }
+/* ==== Reset & Global Styles ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+  background-color: #fff8f0;
+  color: #3e2f1c;
+  line-height: 1.6;
+}
+
+/* ==== Header ==== */
+header {
+  background-color: #4e2c17;
+  color: white;
+  padding: 2rem 1rem 1rem;
+  text-align: left;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  color: #f5e8d0;
+}
+
+/* ==== Navigation Bar ==== */
+nav {
+  background-color: #b67b4d;
+  padding: 0.8rem 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2c1b10;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* ==== Main Section ==== */
+main {
+  padding: 2rem;
+  min-height: 400px;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* ==== Hero Text or Center Text ==== */
+.center-text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ==== Background Image Section ==== */
+.bg-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 1rem;
+}
+
+/* ==== Footer ==== */
+footer {
+  background-color: #4e2c17;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  header {
+    text-align: center;
+  }
+}
 
