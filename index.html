@@ -2,218 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dan's Bakery</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    body {
-      font-family: "Times New Roman", serif;
-      background-color: #fdfaf6;
-      color: #3e2f1c;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      background-color: #6b4c3b;
-      color: white;
-      padding: 10px 20px;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .nav-links {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 15px;
-    }
-    .nav-links li a {
-      color: white;
-      text-decoration: none;
-    }
-    .logo img {
-      height: 60px;
-    }
-    .intro {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .product-card {
-      background-color: #fff;
-      padding: 15px;
-      border: 1px solid #d3c1a1;
-      border-radius: 10px;
-      text-align: center;
-    }
-    .product-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    input, textarea, button {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-family: "Times New Roman", serif;
-    }
-    .btn {
-      background-color: #6b4c3b;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    .btn:hover {
-      background-color: #5a3d2f;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Dan's Bakery</title>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo"><img src="assets/logo.jpg" alt="Dan's Bakery Logo"></div>
+      <div class="logo"><img src="assets/logo.jpg" alt="Dan's Bakery Logo"/></div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#promotions">Promotions</a></li>
-        <li><a href="#delivery">Delivery</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="about" class="intro">
-      <h1>About Dan's Bakery</h1>
-      <p>Welcome to Dan's Bakery — where passion meets pastry. Founded in 2025, our bakery is the heart of our community, dedicated to crafting baked goods that warm the soul and please the palate. We believe in traditional techniques blended with creative flair, sourcing the finest ingredients for every item we bake.</p>
-      <p>From golden croissants and rustic sourdoughs to beautifully layered cakes and pastries, we pride ourselves on freshness and flavor. Whether you're grabbing a morning treat or placing a custom cake order, you're always part of the Dan's Bakery family.</p>
-    </section>
-
-    <section id="products" class="intro">
-      <h1>Our Products</h1>
-      <p>At Dan's Bakery, each product tells a story — of heritage, of flavor, and of joy. Explore some of our best-selling creations below:</p>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="assets/images/product1.jpg" alt="Buttery Croissant">
-          <h3>Buttery Croissant</h3>
-          <p>Flaky and golden with a soft center. $2.50</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/product2.jpg" alt="Sourdough Bread">
-          <h3>Rustic Sourdough</h3>
-          <p>Crunchy crust, tangy crumb. $4.00</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/product3.jpg" alt="Chocolate Cake">
-          <h3>Chocolate Indulgence Cake</h3>
-          <p>Rich layers of chocolate bliss. $15.00</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/product4.jpg" alt="Cupcake">
-          <h3>Vanilla Swirl Cupcake</h3>
-          <p>Perfect for a sweet bite. $1.75</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/product5.jpg" alt="Fruit Tart">
-          <h3>Fresh Fruit Tart</h3>
-          <p>Seasonal fruits on creamy custard. $3.00</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/product6.jpg" alt="Cinnamon Roll">
-          <h3>Classic Cinnamon Roll</h3>
-          <p>Warm and gooey with icing drizzle. $2.25</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="promotions" class="intro">
-      <h1>Current Promotions</h1>
-      <ul>
-        <li>🎉 Buy 2 get 1 free – All pastries this weekend only!</li>
-        <li>🎂 10% off on custom cake orders placed this month.</li>
-        <li>🚚 Free delivery on orders over $25.</li>
-      </ul>
-    </section>
-
-    <section id="delivery" class="intro">
-      <h1>Order Now</h1>
-      <form onsubmit="return validateOrderForm()">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="product">Product:</label>
-        <input type="text" id="product" name="product" required>
-
-        <label for="address">Delivery Address:</label>
-        <input type="text" id="address" name="address" required>
-
-        <button type="submit" class="btn">Submit Order</button>
-      </form>
-    </section>
-
-    <section id="faq" class="intro">
-      <h1>Frequently Asked Questions</h1>
-      <p><strong onclick="toggleFAQ('q1')">Do you offer gluten-free options?</strong></p>
-      <p id="q1" style="display:none">Yes, we have a variety of gluten-free items including bread and muffins.</p>
-      <p><strong onclick="toggleFAQ('q2')">What are your store hours?</strong></p>
-      <p id="q2" style="display:none">We’re open Monday to Saturday from 8am to 6pm.</p>
-      <p><strong onclick="toggleFAQ('q3')">Do you deliver outside of town?</strong></p>
-      <p id="q3" style="display:none">Yes, we deliver within a 15-mile radius for a small fee.</p>
-    </section>
-
-    <section id="reviews" class="intro">
-      <h1>Customer Reviews</h1>
-      <p>"Best croissants in town!" – Sarah L.</p>
-      <p>"Their sourdough changed my mornings." – Mike T.</p>
-      <p>"Always fresh, always amazing." – Priya K.</p>
-    </section>
-
-    <section id="contact" class="intro">
-      <h1>Contact Us</h1>
-      <form>
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit" class="btn">Send</button>
-      </form>
-    </section>
+  <main class="intro">
+    <h1>Welcome to Dan's Bakery</h1>
+    <p>Freshly baked happiness in every bite.</p>
   </main>
 
   <footer>
     <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
   </footer>
-  <script>
-    function toggleFAQ(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === "none" ? "block" : "none";
-    }
-    function validateOrderForm() {
-      alert("Your order has been submitted successfully!");
-      return false;
-    }
-  </script>
 </body>
 </html>
