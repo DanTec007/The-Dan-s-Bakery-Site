@@ -3,72 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Products - Dan's Bakery</title>
+  <title>Products - Dan's Bakery</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">
-      <a href="index.html"><img src="logo.jpg" alt="Dan's Bakery Logo"></a>
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><img src="logo.jpg" alt="Dan's Bakery Logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="promotions.html">Promotions</a></li>
-      <li><a href="delivery.html">Delivery</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
   </nav>
 
-  <section class="content">
-    <h1>Our Delicious Products</h1>
-    <p>Explore our range of fresh and handcrafted baked goods. Every item is made with love and the finest ingredients.</p>
-
-    <div class="product-gallery">
-      <div class="product-item">
-        <img src="product1.jpg" alt="Chocolate Cake">
-        <h3>Chocolate Fudge Cake</h3>
-        <p>Rich and moist chocolate cake topped with a creamy fudge frosting.</p>
+  <main class="main-content">
+    <section class="products-section">
+      <div class="container">
+        <h1>Our Freshly Baked Products</h1>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="product1.jpg" alt="Croissant">
+            <h2>Butter Croissant</h2>
+            <p>Flaky, buttery layers baked fresh every morning.</p>
+          </div>
+          <div class="product-card">
+            <img src="product2.jpg" alt="Cupcake">
+            <h2>Chocolate Cupcake</h2>
+            <p>Moist chocolate cupcakes topped with rich frosting.</p>
+          </div>
+          <div class="product-card">
+            <img src="product3.jpg" alt="Cinnamon Roll">
+            <h2>Cinnamon Roll</h2>
+            <p>Sweet cinnamon swirls finished with cream cheese icing.</p>
+          </div>
+          <div class="product-card">
+            <img src="product4.jpg" alt="Macaron">
+            <h2>Assorted Macarons</h2>
+            <p>Delicate French macarons in a variety of flavors.</p>
+          </div>
+          <div class="product-card">
+            <img src="product5.jpg" alt="Cake">
+            <h2>Celebration Cake</h2>
+            <p>Custom cakes perfect for birthdays and special occasions.</p>
+          </div>
+          <div class="product-card">
+            <img src="product6.jpg" alt="Bread">
+            <h2>Artisan Bread</h2>
+            <p>Crusty, golden loaves baked fresh daily with natural ingredients.</p>
+          </div>
+        </div>
       </div>
-
-      <div class="product-item">
-        <img src="product2.jpg" alt="Croissant">
-        <h3>Buttery Croissant</h3>
-        <p>Flaky, golden layers with a soft center — perfect for breakfast or a snack.</p>
-      </div>
-
-      <div class="product-item">
-        <img src="product3.jpg" alt="Fruit Tart">
-        <h3>Fresh Fruit Tart</h3>
-        <p>A crispy tart shell filled with vanilla cream and topped with seasonal fruits.</p>
-      </div>
-
-      <div class="product-item">
-        <img src="product4.jpg" alt="Cupcakes">
-        <h3>Assorted Cupcakes</h3>
-        <p>Colorful and fun, our cupcakes come in a variety of flavors and designs.</p>
-      </div>
-
-      <div class="product-item">
-        <img src="product5.jpg" alt="Bread Loaf">
-        <h3>Artisan Bread</h3>
-        <p>Handmade, crusty bread loaves made daily with natural ingredients.</p>
-      </div>
-
-      <div class="product-item">
-        <img src="product6.jpg" alt="Cookies">
-        <h3>Chocolate Chip Cookies</h3>
-        <p>Soft, chewy cookies loaded with chunks of chocolate chips.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
