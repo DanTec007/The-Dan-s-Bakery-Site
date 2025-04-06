@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="promotions.html">Promotions</a></li>
             <li><a href="delivery.html">Delivery</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="order.html">Order Now</a></li>
 
