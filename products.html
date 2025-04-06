@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Products - Dan's Bakery</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Products | Dan's Bakery</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html"><img src="images/logo.jpg" alt="Dan's Bakery Logo" class="logo"></a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="promotions.html">Promotions</a></li>
-      <li><a href="delivery.html">Delivery</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Header with Logo and Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="images/logo.jpeg" alt="Dan's Bakery Logo" class="logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Products Section -->
   <main>
-    <h1>Our Delicious Products</h1>
-    <section class="product-list">
-      <div class="product-item">
-        <img src="images/bread.jpg" alt="Fresh Bread">
-        <h3>Fresh Bread</h3>
-        <p>Baked daily with love and local ingredients.</p>
+    <section class="products">
+      <h1>Our Delicious Baked Goods</h1>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="images/product1.jpg" alt="Chocolate Cake">
+          <h3>Chocolate Cake</h3>
+          <p>Rich, moist, and layered with decadent chocolate frosting.</p>
+          <p class="price">£14.99</p>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product2.jpg" alt="Vanilla Cupcakes">
+          <h3>Vanilla Cupcakes</h3>
+          <p>Soft cupcakes topped with creamy vanilla buttercream.</p>
+          <p class="price">£9.99</p>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product3.jpg" alt="Strawberry Tart">
+          <h3>Strawberry Tart</h3>
+          <p>Fresh strawberries on a crisp pastry base with creamy filling.</p>
+          <p class="price">£11.49</p>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product4.jpg" alt="Mixed Fruit Loaf">
+          <h3>Mixed Fruit Loaf</h3>
+          <p>Soft loaf packed with raisins, apricots, and a hint of spice.</p>
+          <p class="price">£6.75</p>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product5.jpg" alt="Mini Cheesecakes">
+          <h3>Mini Cheesecakes</h3>
+          <p>Individual treats with a buttery biscuit base and creamy topping.</p>
+          <p class="price">£7.50</p>
+        </div>
+
+        <div class="product-card">
+          <img src="images/product6.jpg" alt="Croissant Box">
+          <h3>Croissant Box</h3>
+          <p>Flaky, buttery croissants, fresh-baked every morning.</p>
+          <p class="price">£5.99</p>
+        </div>
+
       </div>
-      <div class="product-item">
-        <img src="images/cake.jpg" alt="Celebration Cakes">
-        <h3>Celebration Cakes</h3>
-        <p>Custom cakes for birthdays, weddings, and more.</p>
-      </div>
-      <!-- Add more products here -->
     </section>
   </main>
 
