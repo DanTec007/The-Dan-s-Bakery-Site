@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Promotions | Dan's Bakery</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promotions - Dan's Bakery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-<header class="navbar">
-  <div class="logo">
-    <a href="index.html">
-      <img src="images/logo.jpg" alt="Dan's Bakery Logo">
-    </a>
-  </div>
-  <nav>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="logo.jpg" alt="Dan's Bakery Logo"></a>
+    </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="products.html">Products</a></li>
-      <li><a href="promotions.html">Promotions</a></li>
+      <li><a href="promotions.html" class="active">Promotions</a></li>
       <li><a href="delivery.html">Delivery</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="reviews.html">Reviews</a></li>
@@ -27,19 +23,36 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-</header>
-  <main class="intro">
-    <h1>Special Promotions</h1>
-    <ul>
-      <li><strong>Buy One Get One Free</strong> on all cupcakes every Friday!</li>
-      <li><strong>10% off</strong> your first online order – use code: <code>DAN10</code></li>
-      <li><strong>Free delivery</strong> for orders over $30 this weekend only!</li>
-    </ul>
-  </main>
+
+  <section class="content">
+    <h1>Current Promotions</h1>
+
+    <div class="promo-box">
+      <h2>Buy 1 Get 1 Free</h2>
+      <p>Every Monday, buy one loaf of sourdough and get one free. A perfect way to start your week with fresh bread!</p>
+    </div>
+
+    <div class="promo-box">
+      <h2>Student Discount</h2>
+      <p>Show your valid student ID and get 15% off all pastries every Tuesday and Thursday.</p>
+    </div>
+
+    <div class="promo-box">
+      <h2>Weekend Specials</h2>
+      <p>Get 20% off custom cakes ordered for pickup on weekends. Celebrate with sweetness!</p>
+    </div>
+
+    <div class="promo-box">
+      <h2>Join Our Rewards Club</h2>
+      <p>Sign up for our loyalty program and earn points with every purchase. Redeem them for discounts and free treats!</p>
+      <a class="cta-button" href="signup.html">Join Now</a>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
 
