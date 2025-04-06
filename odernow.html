@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Order Now - Dan's Bakery</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Consistent Navbar -->
+  <!-- Header Section (consistent navbar) -->
   <header>
     <nav class="navbar">
       <a href="index.html">
-        <img src="images/logo.jpg" alt="Dan's Bakery Logo" class="logo">
+        <img src="images/logo.jpg" alt="Dan's Bakery Logo" class="logo" />
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -27,58 +28,46 @@
     </nav>
   </header>
 
-  <!-- Order Page Main Section -->
-  <main class="content-wrapper order-page">
-    <h1>Order Now</h1>
-    <p>Select your favorite baked goods and place your order below!</p>
+  <!-- Order Page Content -->
+  <main class="content-wrapper">
+    <section class="form-section">
+      <h1>Order Now</h1>
+      <p>Select your favorite baked goods and place your order below!</p>
 
-    <form id="order-form" class="form">
-      <label for="product">Choose a Product:</label>
-      <select id="product" name="product" required>
-        <option value="">-- Select --</option>
-        <option value="bread">Fresh Bread</option>
-        <option value="cake">Custom Cake</option>
-        <option value="cookies">Cookies</option>
-        <option value="muffins">Muffins</option>
-      </select>
+      <form id="order-form" class="form">
+        <label for="product">Choose a Product:</label>
+        <select id="product" name="product" required>
+          <option value="">-- Select --</option>
+          <option value="bread">Fresh Bread</option>
+          <option value="cake">Custom Cake</option>
+          <option value="cookies">Cookies</option>
+          <option value="muffins">Muffins</option>
+        </select>
 
-      <label for="quantity">Quantity:</label>
-      <input type="number" id="quantity" name="quantity" min="1" required>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required />
 
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
 
-      <button type="submit">Place Order</button>
-    </form>
+        <button type="submit" class="cta-btn">Place Order</button>
+      </form>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <div class="social-media">
-      <a href="https://www.instagram.com/DansBakery" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/DansBakery" target="_blank">Facebook</a>
-      <a href="https://www.tiktok.com/@DansBakery" target="_blank">TikTok</a>
-      <a href="https://www.x.com/DansBakery" target="_blank">X (Twitter)</a>
-    </div>
     <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
-    <nav>
-      <ul>
-        <li><a href="#privacy-policy">Privacy Policy</a></li>
-        <li><a href="#terms-conditions">Terms & Conditions</a></li>
-        <li><a href="#shipping-policy">Shipping & Return Policy</a></li>
-      </ul>
-    </nav>
   </footer>
 
-  <!-- Script -->
+  <!-- Scripts -->
   <script>
     document.getElementById("order-form").addEventListener("submit", function (e) {
       e.preventDefault();
       alert("Thank you! Your order has been received.");
-      this.reset(); // Optional: reset the form after submitting
     });
   </script>
 </body>
