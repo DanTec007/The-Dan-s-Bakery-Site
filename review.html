@@ -1,32 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reviews - Dan's Bakery</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .star {
-      font-size: 1.2rem;
-      color: #ccc;
-      cursor: pointer;
-    }
-    .star.filled {
-      color: #f5a623;
-    }
-    .review-item {
-      border-bottom: 1px solid #eee;
-      padding: 1rem 0;
-    }
-    .review-controls {
-      margin-bottom: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
     <div class="logo">
-      <a href="index.html"><img src="logo.jpg" alt="Dan's Bakery Logo" /></a>
+      <a href="index.html"><img src="logo.jpg" alt="Dan's Bakery Logo"></a>
     </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -43,39 +30,28 @@
 
   <section class="content">
     <h1>Customer Reviews</h1>
-
-    <div class="review-controls">
-      <label for="sort">Sort by:</label>
-      <select id="sort">
-        <option value="latest">Latest</option>
-        <option value="highest">Highest Rating</option>
-      </select>
+    <div class="review">
+      <p><strong>Jane D.</strong>: "Absolutely the best pastries in town. The croissants are to die for!"</p>
     </div>
-
-    <div id="reviewsContainer" class="reviews">
-      <!-- Reviews will be injected here -->
+    <div class="review">
+      <p><strong>Mark T.</strong>: "Dan's Bakery has become our weekend tradition. Love the cinnamon rolls!"</p>
     </div>
-
+    <div class="review">
+      <p><strong>Sophia L.</strong>: "A charming bakery with the friendliest staff. Highly recommend!"</p>
+    </div>
+    <div class="review">
+      <p><strong>Leo G.</strong>: "The sourdough bread is always fresh and perfect for our family dinners."</p>
+    </div>
     <div class="review-form">
       <h2>Leave a Review</h2>
       <form id="reviewForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" required>
 
         <label for="review">Review:</label>
         <textarea id="review" name="review" rows="4" required></textarea>
 
-        <label>Rating:</label>
-        <div id="starRating">
-          <span class="star" data-value="1">&#9733;</span>
-          <span class="star" data-value="2">&#9733;</span>
-          <span class="star" data-value="3">&#9733;</span>
-          <span class="star" data-value="4">&#9733;</span>
-          <span class="star" data-value="5">&#9733;</span>
-        </div>
-
-        <input type="hidden" id="rating" name="rating" required />
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn">Submit</button>
       </form>
     </div>
   </section>
@@ -85,79 +61,20 @@
   </footer>
 
   <script>
-    const reviewsContainer = document.getElementById('reviewsContainer');
-    const starElements = document.querySelectorAll('.star');
-    const ratingInput = document.getElementById('rating');
-    let selectedRating = 0;
-
-    const reviews = [
-      { name: "Jane D.", text: "Absolutely the best pastries in town.", rating: 5, date: new Date() },
-      { name: "Mark T.", text: "Dan's Bakery has become our weekend tradition.", rating: 4, date: new Date() },
-    ];
-
-    function renderStars(rating) {
-      let stars = "";
-      for (let i = 1; i <= 5; i++) {
-        stars += `<span class="star ${i <= rating ? 'filled' : ''}">&#9733;</span>`;
-      }
-      return stars;
-    }
-
-    function renderReviews() {
-      reviewsContainer.innerHTML = "";
-      reviews.forEach((review) => {
-        reviewsContainer.innerHTML += `
-          <div class="review-item">
-            <p><strong>${review.name}</strong></p>
-            <p>${renderStars(review.rating)}</p>
-            <p>${review.text}</p>
-          </div>
-        `;
-      });
-    }
-
-    starElements.forEach((star) => {
-      star.addEventListener("click", () => {
-        selectedRating = parseInt(star.getAttribute("data-value"));
-        ratingInput.value = selectedRating;
-        starElements.forEach((s, i) => {
-          s.classList.toggle("filled", i < selectedRating);
-        });
-      });
-    });
-
-    document.getElementById("reviewForm").addEventListener("submit", function (event) {
+    document.getElementById('reviewForm').addEventListener('submit', function(event) {
       event.preventDefault();
-      const name = document.getElementById("name").value;
-      const text = document.getElementById("review").value;
+      const name = document.getElementById('name').value;
+      const review = document.getElementById('review').value;
 
-      if (name && text && selectedRating > 0) {
-        reviews.unshift({ name, text, rating: selectedRating, date: new Date() });
-        renderReviews();
+      if (name && review) {
+        alert('Thank you for your feedback, ' + name + '!');
         this.reset();
-        starElements.forEach((star) => star.classList.remove("filled"));
-        selectedRating = 0;
-        ratingInput.value = "";
-        alert("Thank you for your review!");
       } else {
-        alert("Please complete all fields including rating.");
+        alert('Please fill out all fields.');
       }
     });
-
-    document.getElementById("sort").addEventListener("change", function () {
-      const sortBy = this.value;
-      if (sortBy === "highest") {
-        reviews.sort((a, b) => b.rating - a.rating);
-      } else {
-        reviews.sort((a, b) => b.date - a.date);
-      }
-      renderReviews();
-    });
-
-    renderReviews();
   </script>
 </body>
 </html>
-
 
 
