@@ -2,51 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | Dan's Bakery</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Dan's Bakery</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
-<header class="navbar">
-  <div class="logo">
-    <a href="index.html">
-      <img src="images/logo.jpg" alt="Dan's Bakery Logo">
-    </a>
-  </div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="promotions.html">Promotions</a></li>
-      <li><a href="delivery.html">Delivery</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Dan's Bakery Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
   </nav>
-</header>
-  <main class="intro">
-    <h1>Contact Us</h1>
-    <form>
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+  <main class="main-content">
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>If you have any questions, feedback, or want to place a custom order, please fill out the form below or visit us at our bakery.</p>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
 
-      <button type="submit" class="btn">Send</button>
-    </form>
+      <div class="location-info">
+        <h2>Our Location</h2>
+        <p>123 Sweet Street, Pastryville, CA 90210</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> info@dansbakery.com</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (name && email && message) {
+        alert('Thanks for contacting us, ' + name + '! We will get back to you soon.');
+        this.reset();
+      } else {
+        alert('Please complete all fields.');
+      }
+    });
+  </script>
 </body>
 </html>
+
 
