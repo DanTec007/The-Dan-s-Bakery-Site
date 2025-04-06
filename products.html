@@ -3,71 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Products | Dan's Bakery</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <title>Dan's Bakery - Products</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      background-color: #fdfaf6;
+      color: #4e342e;
+    }
+
+    header {
+      background-color: #6d4c41;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 1.8em;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      color: #5d4037;
+    }
+
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+      color: #6d4c41;
+    }
+
+    .product-info p {
+      margin: 5px 0;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #8d6e63;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #6d4c41;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo"><img src="assets/logo.jpg" alt="Dan's Bakery Logo"/></div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="promotions.html">Promotions</a></li>
-        <li><a href="delivery.html">Delivery</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="intro">
-    <h1>Our Products</h1>
-    <section class="product-gallery">
-      <div class="product-card">
-        <img src="assets/product1.jpg" alt="Chocolate Cake">
-        <h3>Chocolate Cake</h3>
-        <p>Rich, moist chocolate cake topped with creamy fudge frosting.</p>
-        <p class="price">$15.99</p>
-      </div>
-      <div class="product-card">
-        <img src="assets/product2.jpg" alt="Vanilla Cupcakes">
-        <h3>Vanilla Cupcakes</h3>
-        <p>Fluffy vanilla cupcakes with buttercream swirls.</p>
-        <p class="price">$9.99 / dozen</p>
-      </div>
-      <div class="product-card">
-        <img src="assets/product3.jpg" alt="Strawberry Tart">
-        <h3>Strawberry Tart</h3>
-        <p>Fresh strawberries on a creamy custard base with a crisp crust.</p>
-        <p class="price">$12.50</p>
-      </div>
-      <div class="product-card">
-        <img src="assets/product4.jpg" alt="Banana Bread">
-        <h3>Banana Bread</h3>
-        <p>Classic banana bread loaded with ripe bananas and walnuts.</p>
-        <p class="price">$7.99</p>
-      </div>
-      <div class="product-card">
-        <img src="assets/product5.jpg" alt="Lemon Cookies">
-        <h3>Lemon Cookies</h3>
-        <p>Soft, zesty lemon cookies dusted with powdered sugar.</p>
-        <p class="price">$6.99 / pack</p>
-      </div>
-      <div class="product-card">
-        <img src="assets/product6.jpg" alt="Baguette">
-        <h3>French Baguette</h3>
-        <p>Crusty, artisan-style baguette fresh from the oven.</p>
-        <p class="price">$3.99</p>
-      </div>
-    </section>
-  </main>
+<header>
+  <img src="images/logo.jpg" alt="Dan's Bakery Logo">
+  <h1>Dan's Bakery</h1>
+</header>
 
-  <footer>
-    <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
-  </footer>
+<h2>Our Fresh Products</h2>
+
+<section class="products-container">
+  <div class="product-card">
+    <img src="images/product1.jpg" alt="Chocolate Cake">
+    <div class="product-info">
+      <h3>Chocolate Fudge Cake</h3>
+      <p>Rich and moist with layers of ganache.</p>
+      <p class="price">£12.99</p>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/product2.jpg" alt="Strawberry Tart">
+    <div class="product-info">
+      <h3>Strawberry Tart</h3>
+      <p>Fresh strawberries on creamy custard and a flaky crust.</p>
+      <p class="price">£4.99</p>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/product3.jpg" alt="Vanilla Cupcakes">
+    <div class="product-info">
+      <h3>Vanilla Cupcakes</h3>
+      <p>Light, fluffy, and topped with vanilla buttercream.</p>
+      <p class="price">£6.50 (6-pack)</p>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/product4.jpg" alt="Cinnamon Rolls">
+    <div class="product-info">
+      <h3>Cinnamon Rolls</h3>
+      <p>Sweet rolls with cinnamon swirls and icing drizzle.</p>
+      <p class="price">£5.99</p>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/product5.jpg" alt="Almond Croissant">
+    <div class="product-info">
+      <h3>Almond Croissant</h3>
+      <p>Flaky pastry filled with almond cream and topped with flakes.</p>
+      <p class="price">£3.25</p>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/product6.jpg" alt="Lemon Cheesecake">
+    <div class="product-info">
+      <h3>Lemon Cheesecake</h3>
+      <p>Creamy cheesecake with a zesty lemon twist.</p>
+      <p class="price">£9.99</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Dan's Bakery. All rights reserved.
+</footer>
+
 </body>
 </html>
+
 
