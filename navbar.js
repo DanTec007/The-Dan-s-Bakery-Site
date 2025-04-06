@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <header>
         <nav class="navbar">
           <a href="index.html">
-            <img src="images/logo.jpg" alt="Dan's Bakery Logo" class="logo">
+            <img src="images/logo.jpeg" alt="Dan's Bakery Logo" class="logo">
           </a>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
