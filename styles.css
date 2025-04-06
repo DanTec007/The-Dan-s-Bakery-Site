@@ -186,8 +186,21 @@ blockquote {
         flex-direction: column;
     }
 }
-.logo {
-  height: 60px;
-  width: auto;
-  vertical-align: middle;
-}
+<style>
+  .logo {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+  .product-category img,
+  .about-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+</style>
+
