@@ -287,3 +287,32 @@ footer {
   background-color: #ffe6cc;
 }
 
+.order-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form input,
+.form select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.form button {
+  padding: 0.75rem;
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #b55a17;
+}
