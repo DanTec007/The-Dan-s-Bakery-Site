@@ -163,3 +163,170 @@ footer {
 .error {
   border: 2px solid red;
 }
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF4E1; /* Creamy White */
+    color: #4A4A4A; /* Dark Gray */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    color: #6B4F3E; /* Dark Brown */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6B4F3E; /* Dark Brown */
+    padding: 20px;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #FFF4E1; /* Creamy White */
+    font-weight: bold;
+}
+
+header .cta-button a {
+    padding: 10px 20px;
+    background-color: #D97741; /* Rust Orange */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+header .cta-button a:hover {
+    background-color: #C76430; /* Darker Rust Orange */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero .cta-btn {
+    padding: 12px 24px;
+    background-color: #D97741; /* Rust Orange */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero .cta-btn:hover {
+    background-color: #C76430; /* Darker Rust Orange */
+}
+
+/* About Us Section */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section#about {
+    background-color: #F5E1A4; /* Light Beige */
+}
+
+section#menu {
+    background-color: #FFF4E1; /* Creamy White */
+}
+
+/* Footer */
+footer {
+    background-color: #6B4F3E; /* Dark Brown */
+    color: #FFF4E1; /* Creamy White */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: #FFF4E1;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+footer nav ul li a {
+    color: #FFF4E1;
+}
+
+footer nav ul li a:hover {
+    color: #D97741; /* Rust Orange */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+}
+.logo {
+  height: 60px;
+  margin: 10px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.product-img {
+  width: 200px;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
