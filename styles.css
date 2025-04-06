@@ -26,6 +26,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  flex-wrap: wrap;
 }
 
 .navbar .logo img {
@@ -36,7 +37,13 @@ img {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+.nav-links li {
+  display: inline;
 }
 
 .nav-links a {
@@ -44,10 +51,13 @@ img {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
 .nav-links a:hover {
-  color: #d7ccc8;
+  background-color: #5d4037;
+  color: #fff3e0;
 }
 
 /* Main Section */
@@ -129,11 +139,17 @@ footer {
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-links {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-links li {
+    width: 100%;
   }
 }
 
