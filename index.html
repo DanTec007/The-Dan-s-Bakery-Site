@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up - Dan's Bakery</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dan’s Bakery - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/navbar.js" defer></script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="logo"><img src="logo.jpg" alt="Dan's Bakery Logo"></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Dan’s Bakery Logo" />
+      <h1>Dan’s Bakery</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="promotions.html">Promotions</a></li>
         <li><a href="delivery.html">Delivery</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="signup.html" class="active">Sign Up</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <main class="main-content">
-    <section class="signup-section">
-      <div class="container">
-        <h1>Sign Up for Our Newsletter</h1>
-        <form id="signupForm" class="form">
-          <div class="form-group">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-          </div>
-          <button type="submit" class="btn">Subscribe</button>
-        </form>
+  <main class="homepage-content">
+    <section class="hero">
+      <h2>Freshly Baked Goodness Every Day</h2>
+      <p>From our oven to your heart — try our handmade pastries, bread, and cakes!</p>
+      <a href="products.html" class="button">Browse Products</a>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <img src="images2/bread.jpg" alt="Fresh bread" />
+        <h3>Fresh Ingredients</h3>
+        <p>Only the finest natural ingredients go into every bite.</p>
+      </div>
+      <div class="feature">
+        <img src="images2/pastry.jpg" alt="Delicious pastries" />
+        <h3>Handmade Daily</h3>
+        <p>Our baked goods are crafted by hand each morning.</p>
+      </div>
+      <div class="feature">
+        <img src="images2/delivery.jpg" alt="Bakery delivery service" />
+        <h3>Delivery Available</h3>
+        <p>Get your favorites delivered straight to your door.</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
-    </div>
+  <footer class="site-footer">
+    <p>&copy; 2025 Dan’s Bakery. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
 
 
