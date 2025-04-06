@@ -1,16 +1,15 @@
-<!-- reviews.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Reviews | Dan's Bakery</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Reviews - Dan's Bakery</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Dan's Bakery Logo" class="logo">
-    <h1>Dan's Bakery</h1>
     <nav>
+      <a href="index.html"><img src="images/logo.png" alt="Dan's Bakery Logo" class="logo"></a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -19,24 +18,40 @@
         <li><a href="delivery.html">Delivery</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="reviews.html" class="active">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
         <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h2>What Our Customers Say</h2>
-    <blockquote>
-      <p>"The cupcakes were incredible and the service was outstanding! Highly recommend."</p>
-      <footer>- Sarah M.</footer>
-    </blockquote>
-    <blockquote>
-      <p>"I always get my bread from Dan's — fresh, soft, and amazing every time."</p>
-      <footer>- James R.</footer>
-    </blockquote>
+
+  <main class="container">
+    <h1>What Our Customers Say</h1>
+    <section class="reviews-section">
+      <article class="review">
+        <h3>Maria G.</h3>
+        <p>"The cupcakes are to die for! Dan's Bakery is my go-to place for every celebration."</p>
+        <span>⭐⭐⭐⭐⭐</span>
+      </article>
+      <article class="review">
+        <h3>James P.</h3>
+        <p>"Friendly staff, delicious pastries, and amazing coffee. What more can you ask for?"</p>
+        <span>⭐⭐⭐⭐⭐</span>
+      </article>
+      <article class="review">
+        <h3>Sofia L.</h3>
+        <p>"Their gluten-free options are the best I’ve found. Highly recommended!"</p>
+        <span>⭐⭐⭐⭐</span>
+      </article>
+      <article class="review">
+        <h3>Ryan K.</h3>
+        <p>"Great value for money, and their seasonal specials always surprise me!"</p>
+        <span>⭐⭐⭐⭐⭐</span>
+      </article>
+    </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 Dan's Bakery</p>
+    <p>&copy; 2025 Dan's Bakery. All rights reserved.</p>
   </footer>
 </body>
 </html>
